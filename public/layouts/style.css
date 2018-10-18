@@ -1437,3 +1437,23 @@ px      68    160    252    344    436    */
 .div-espace{
 margin-bottom:137px;
 }
+.label-info {
+  margin: 5px 4px;
+}
+
+.glyphicon {
+  position: relative;
+  top: -47px !important;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 51px !important;
+}
+
+#edit{
+  margin: 1px 10px;
+}

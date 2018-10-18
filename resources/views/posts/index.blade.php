@@ -12,15 +12,15 @@
               <div class="col-sm-4">                
                 <div class="panel panel-primary">
                   <div class="panel-heading">
-                    <h3 class="panel-title">{{$post->firstname}} - {{$post->lastname}}</h3>
+                    <h3 class="panel-title"> {{$post->subject}}</h3>
                   </div>
                   <div class="panel-body">
-                    <h2> {{$post->subject}}</h2>              
+                    <h2></h2>              
                       <a class="" href="/posts/{{$post->id}}" > 
                         <img src="{{ URL::to('/') }}/images/{{$post->post_image}}" class="img-thumbnail" alt="{{$post->post_image}}" style="width:50%,height:50%" > 
                       </a>
-                    <span class="label label-danger">created at : {{$post->created_at}}  </span>
-                    <span class="label label-info pull-right">  by {{$post->user->name}}</span>                
+                    <span class="label label-danger"> Créer à : {{$post->created_at}}  </span>
+                    <span class="label label-info pull-right">par: {{$post->user->name}}</span>                
                   </div>
               </div>
              </div>

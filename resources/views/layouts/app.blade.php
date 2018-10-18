@@ -14,6 +14,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{asset('layouts/style.css')}}" rel="stylesheet">
       <!-- Fonts -->
+      <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/coreui-icons.min.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
