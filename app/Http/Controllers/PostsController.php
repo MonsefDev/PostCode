@@ -27,7 +27,7 @@ class PostsController extends Controller
     {
         //$posts =   Post::orderBy('created_at','desc')->take(1)->get();
     //    $posts =   Post::orderBy('created_at','desc')->get();
-    $posts =   Post::orderBy('created_at','desc')->paginate(5);
+    $posts =   Post::orderBy('created_at','desc')->paginate(6);
        //$posts =   DB::select('select * FROM posts');
         
         return view('posts.index')->with('posts',$posts);
@@ -188,10 +188,10 @@ $post->save();
         }
 
 
-if($post->post_image != 'noImage.jpg'){
-    Storage::delete('public/images/'.$post->post_image);
- 
-}
+        if($post->post_image != 'noImage.jpg'){
+            Storage::delete('public/images/'.$post->post_image);
+        
+        }
 
 
         $post->delete() ;   

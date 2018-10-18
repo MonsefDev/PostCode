@@ -2,6 +2,7 @@
            
            
             @section('content')
+          
          <div class="panel panel-danger container">
   <div class="panel-heading">
     <h3 class="panel-title">{{$post->firstname}} - {{$post->lastname}}
@@ -28,8 +29,12 @@
 
  {{--  <img src="/storage/post_image/{{$post->post_image}}" class="img-thumbnail" alt="{{$post->post_image}}" style="width:100%,height:50%" >   --}}
   
- <img src="{{ URL::to('/') }}/images/{{$post->post_image}}" class="img-thumbnail" alt="{{$post->post_image}}" style="width:50%,height:50%" > 
-
+ {{--<img src="{{ URL::to('/') }}/images/{{$post->post_image}}" class="img-thumbnail" alt="{{$post->post_image}}" style="width:50%,height:50%" >  --}}
+ <video width="400" controls>
+  <source src="{{asset('images/js.mp4')}}" type="video/mp4">
+  <source src="{{asset('images/js.mp4')}}" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
 
 
   

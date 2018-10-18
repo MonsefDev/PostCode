@@ -5,7 +5,7 @@
             
                 
  {!! Form::open(['action' => ['PostsController@update',$post->id], 'method'=>'POST','enctype'=>'multipart/form-data']) !!}
-   
+ 
    <div class=container>
    <div class="panel panel-warning">
   <div class="panel-heading">

@@ -1,66 +1,72 @@
- 
-        <nav class="navbar navbar-inverse navbar-static-top">
+<header id="top-bar" class="navbar-fixed-top animated-header">
             <div class="container">
                 <div class="navbar-header">
-
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                     </button>
-
-                    <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                         Muhammed Essa 
-                    </a>
+                    <!-- /responsive nav button -->
+                    
+                    <!-- logo -->
+                    <div class="navbar-brand">
+                        <a href="index.html" >
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- /logo -->
                 </div>
-
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                          <li ><a href="/">Home</a></li>
-                          <li><a href="/about">About</a></li>
-                          <li><a href="/posts">Posts</a></li>
-                          <li><a href="/posts/create"  >Create post</a></li>
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
+                <!-- main menu -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <div class="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                                <li ><a href="/">Home</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/posts">Posts</a></li>
+                                <li><a href="/posts/create"  >Ajouter Post</a></li>
+                            @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
-                        @else
+                            @else
+
+
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="/dashboard">Profile</a></li>              
+                                        <li>
+                                            <a href="{{ route('logout') }}"
+                                                        onclick="event.preventDefault();
+                                                                document.getElementById('logout-form').submit();">
+                                                        Logout
+                                            </a>
 
-                                <ul class="dropdown-menu" role="menu">
-
-                   <li><a href="/dashboard">Dashboard</a></li>              
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                        {{ csrf_field() }}
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>    
                             </li>
-                        @endif
-                    </ul>
-                </div>
+                                @endif
+                               
+                            
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /main nav -->
             </div>
-        </nav>
+        </header>
+        <div class="div-espace">
+      
+        </div>
+        
 
 
 
 
- 
