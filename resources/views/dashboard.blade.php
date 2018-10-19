@@ -16,8 +16,8 @@
                         </div>
                     @endif
 
-                   <a href="/posts/create" class="btn btn-primary btn-lg">New post !</a>
-                
+                   <a href="/posts/create" class="btn btn-primary btn-lg"> <span class="glyphicon glyphicon-plus"></span>Ajouter Poste !</a>
+                  
                 
                 <hr>
                 @foreach($posts as $post)
@@ -31,13 +31,16 @@
   
                     </div>
     <div class="panel-footer">
-     <a   href="/posts/{{$post->id}}/edit" class="btn btn-primary  ">Edit</a>
+    <a href="/posts/{{$post->id}}/edit" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-edit">Modifer</span> 
+    </a>
   
-  {!! Form::open(['action' => ['PostsController@destroy',$post->id], 'method'=>'POST']) !!}
-  {{Form::hidden('_method' ,'DELETE') }}
-   {{Form::submit('Delete',['class'=>"pull-right btn btn-danger btn-sm"]) }}
-{!! Form::close() !!}
+    {!! Form::open(['action' => ['PostsController@destroy',$post->id], 'method'=>'POST']) !!}
+    {{Form::hidden('_method' ,'DELETE') }}
+    {{Form::submit('Supprimer',['class'=>"pull-right btn btn-danger btn-lg",'id'=>"btn-delete"]) }}
     
+
+    {!! Form::close() !!}
     </div>                
                 </div>
                 @endforeach

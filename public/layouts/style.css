@@ -1441,7 +1441,7 @@ margin-bottom:137px;
   margin: 5px 4px;
 }
 
-.glyphicon {
+#icon {
   position: relative;
   top: -47px !important;
   display: inline-block;
@@ -1456,4 +1456,8 @@ margin-bottom:137px;
 
 #edit{
   margin: 1px 10px;
+}
+
+#btn-delete{
+  margin-top: -44px;
 }

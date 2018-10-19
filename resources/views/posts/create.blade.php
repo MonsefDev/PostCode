@@ -8,17 +8,19 @@
  
 
    <div class=container>
+   {{Form::submit('Ajouter',['class'=>'btn btn-primary btn-lg pull-right' ] ) }}
+   <br>
 <div class="form-group">
-      {{Form::label('subject', 'Subject')}}
+      {{Form::label('subject', '  Titre')}}
       {{Form::text('subject','' , ['class'=>'form-control'] ) }}
     </div>
  <div class="form-group">
-      {{Form::label('firstname', 'First name')}}
+      {{Form::label('firstname', 'Nom')}}
       {{Form::text('firstname','',['class'=>'form-control']) }}
     </div>
 
 <div class="form-group">
-      {{Form::label('lastname', 'Last name')}}
+      {{Form::label('lastname', 'Prenom')}}
       {{Form::text('lastname','',['class'=>'form-control' ]) }}
     </div>
 
@@ -34,7 +36,7 @@
       {{Form::file('post_image', ['class'=>'btn ' ]) }}
     </div>   
  
-{{Form::submit('Create',['class'=>'btn btn-primary btn-lg' ] ) }}
+
 
    </div>
 

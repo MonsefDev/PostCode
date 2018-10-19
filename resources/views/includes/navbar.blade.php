@@ -23,9 +23,9 @@
                     <div class="main-menu">
                         <ul class="nav navbar-nav navbar-right">
                                 <li ><a href="/">Home</a></li>
-                                <li><a href="/about">About</a></li>
                                 <li><a href="/posts">Posts</a></li>
                                 <li><a href="/posts/create"  >Ajouter Post</a></li>
+                                <li><a href="/about">About</a></li>
                             @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                             <li><a href="{{ route('register') }}">Register</a></li>
