@@ -18,7 +18,7 @@
               <a class="btn btn-primary btn-lg pull-right" href="/posts/{{$post->id}}/edit" id="edit" >Modifer</a>
               {{--  <img src="/storage/post_image/{{$post->post_image}}" class="img-thumbnail" alt="{{$post->post_image}}" style="width:100%,height:50%" >   --}}
             
-              <img src="{{ URL::to('/') }}/images/{{$post->post_image}}" class="img-thumbnail" alt="{{$post->post_image}}" style="width:50%,height:50%" >   
+              <img src="{{ URL::to('/') }}/images/{{$post->post_image}}" class="img-thumbnail" alt="{{$post->post_image}}" style="width:50% !important;height:50% !important;" >   
               {{--<video width="400" controls>
                 <source src="{{asset('images/js.mp4')}}" type="video/mp4">
                 <source src="{{asset('images/js.mp4')}}" type="video/ogg">

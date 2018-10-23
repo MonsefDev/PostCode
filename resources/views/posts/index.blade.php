@@ -17,7 +17,7 @@
                   <div class="panel-body">
                     <h2></h2>              
                       <a class="" href="/posts/{{$post->id}}" > 
-                        <img src="{{ URL::to('/') }}/images/{{$post->post_image}}" class="img-thumbnail" alt="{{$post->post_image}}" style="width:50%,height:50%" > 
+                        <img src="{{ URL::to('/') }}/images/{{$post->post_image}}" class="img-thumbnail" alt="{{$post->post_image}}" style="width:100% !important;height:50% !important;"  > 
                       </a>
                     <span class="label label-danger"> Créer à : {{$post->created_at}}  </span>
                     <span class="label label-info pull-right">par: {{$post->user->name}}</span>                
@@ -38,5 +38,9 @@
         </div>  
         @endif  
 
+        
+
   @endsection
+
+
 
