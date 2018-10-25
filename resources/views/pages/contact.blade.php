@@ -13,7 +13,7 @@
                             <h2>Contact</h2>
                             <ol class="breadcrumb">
                                 <li>
-                                    <a href="index.html">
+                                    <a href="/">
                                         <i class="ion-ios-home"></i>
                                         Home
                                     </a>

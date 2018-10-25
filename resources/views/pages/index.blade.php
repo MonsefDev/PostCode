@@ -36,7 +36,7 @@
                     </div>
                     <figcaption>
                     <h3>
-                    <a href="#">
+                    <a href="/posts/{{$post->id}}">
                     {{$post->subject}}
                     </a>
                     </h3>
@@ -54,8 +54,9 @@
             </div>
         </div>
     </div>
-</section>  @include('includes.footer') 
-                </div>
-            </div>
-            </div>
-            @endsection
+</section>  
+        @include('includes.footer') 
+    </div>
+    </div>
+    </div>
+    @endsection
