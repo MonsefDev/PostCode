@@ -36,24 +36,23 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="block">
-                    <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contact With Me</h2>
+                    <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">Contacter avec moi</h2>
                     <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, ea!
-                         consectetur adipisicing elit. Dolore, ea!
+                    
                     </p>
                     <div class="contact-form">
                         <form id="contact-form" method="#" action="#" role="form">
                 
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
-                                <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                                <input type="text" placeholder="Votre Nom" class="form-control" name="name" id="name">
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email" id="email" >
+                                <input type="email" placeholder="Votre Email" class="form-control" name="email" id="email" >
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
-                                <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                                <input type="text" placeholder="Sujet" class="form-control" name="subject" id="subject">
                             </div>
                             
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
@@ -61,11 +60,11 @@
                             </div>
                             
                             <div id="success" class="success">
-                                Thank you. The Mailman is on His Way :)
+                            Je vous remercie. Le facteur est en route :)
                             </div>
                             
                             <div id="error" class="error">
-                                Sorry, don't know what happened. Try later :(
+                            Désolé, je ne sais pas ce qui s'est passé. Essayer plus tard :(
                             </div>
                             
                             <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
@@ -77,32 +76,7 @@
             </div>
           
         </div>
-        <div class="row address-details">
-            <div class="col-md-3">
-                <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".3s">
-                    <i class="ion-ios-location-outline"></i>
-                    <h5>125 , Kings Street,Melbourne <br>United Kingdom,600562</h5>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="address wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".5s">
-                    <i class="ion-ios-location-outline"></i>
-                    <h5>125 , Kings Street,Melbourne <br>United Kingdom,600562</h5>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="email wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".7s">
-                    <i class="ion-ios-email-outline"></i>
-                    <p>support@themefisher.com<br>support@themefisher.com</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="phone wow fadeInLeft" data-wow-duration="500ms" data-wow-delay=".9s">
-                    <i class="ion-ios-telephone-outline"></i>
-                    <p>+07 052 245 022<br>+07 999 999 999</p>
-                </div>
-            </div>
-        </div>
+       
     </div>
 </section>  
 

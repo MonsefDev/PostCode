@@ -26,6 +26,10 @@ class PagesController extends Controller
         $name= 'contact';
         return view('pages.contact')->with('name',$name );
       }
+      function gag() {
+        $posts =   DB::select('select * FROM posts ORDER BY id DESC');         
+         return view('pages.gag')->with('posts',$posts);
+      }
 
       function proLanguage() {
         

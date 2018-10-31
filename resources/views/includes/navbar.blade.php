@@ -25,7 +25,7 @@
                                 <li ><a href="/">Home</a></li>
                                 <li><a href="/posts">Posts</a></li>
                                 <li><a href="/posts/create"  >Ajouter Post</a></li>
-                               <!-- <li><a href="/about">About</a></li>-->
+                                 <li><a href="/gag">Gag Post</a></li>
                                 <li><a href="/contact">Contact</a></li>
                             @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>

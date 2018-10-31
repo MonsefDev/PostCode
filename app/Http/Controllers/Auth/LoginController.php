@@ -75,7 +75,7 @@ class LoginController extends Controller
 
       auth()->login($authUser);
 
-      return redirect('/');
+      return redirect('/dashboard');
 
 
        
